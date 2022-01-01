@@ -2,12 +2,14 @@
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   color: #232425;
-} 
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
 html, body {
   margin: 0;
   padding: 0;
   font-size: 100%;
-  font-family: Helvitixa sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 html, body, .page, .row, .left, .right {
@@ -25,35 +27,65 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background: linear-gradient(to bottom, #ffdbe3, white);
+  background: #e8e7ff;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .font-x10 {
+    font-size: 110%;
+  }
+
+  .text-right {
+    text-align: right;
+  }
+
+  .btn {
+    background-color: white;
+    padding: 4px 3px;
+    &:hover {
+      box-shadow: 1px 1px 2px #eee;
+    }
+  }
+
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-.left, .right {
+.left, .right, .third, .two-third {
   float: left;
   padding: 10px;
 }
 
-.gradient-1 {
-
-}
-
 .left {
   width: 10%;
-  background: #ffffff93;
-  box-shadow: 1px 1px 5px #ffdbe3;
+  background: #ffffff85;
+  box-shadow: 1px 1px 5px #e8e7ff;
 }
 
 .right {
   width: 90%;
 }
 
+.third {
+  width: 33.3%;
+}
+
+.two-third {
+  width: 66.6%;
+}
+
+.ml5 {
+  margin-left: 5px;
+}
+.mt5 {
+  margin-left: 5px;
+}
+.ml5 {
+  margin-left: 5px;
+}
+
 @media screen and (max-width: 600px) {
-  .left, .right {
+  .left, .right, .third, .two-third {
     width: 100%;
   }
 }

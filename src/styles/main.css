@@ -1,6 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 *, *:before, *:after { -webkit-box-sizing: border-box; box-sizing: border-box; -moz-box-sizing: border-box; color: #232425; }
 
-html, body { margin: 0; padding: 0; font-size: 100%; font-family: Helvitixa sans-serif; }
+html, body { margin: 0; padding: 0; font-size: 100%; font-family: "Open Sans", sans-serif; }
 
 html, body, .page, .row, .left, .right { height: 100%; width: 100%; }
 
@@ -8,16 +9,29 @@ a { text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 { margin: 0; padding: 0; }
 
-body { background: -webkit-gradient(linear, left top, left bottom, from(#ffdbe3), to(white)); background: linear-gradient(to bottom, #ffdbe3, white); }
+body { background: #e8e7ff; }
+body .row:after { content: ""; display: table; clear: both; }
+body .font-x10 { font-size: 110%; }
+body .text-right { text-align: right; }
+body .btn { background-color: white; padding: 4px 3px; }
+body .btn:hover { -webkit-box-shadow: 1px 1px 2px #eee; box-shadow: 1px 1px 2px #eee; }
 
-.row:after { content: ""; display: table; clear: both; }
+.left, .right, .third, .two-third { float: left; padding: 10px; }
 
-.left, .right { float: left; padding: 10px; }
-
-.left { width: 10%; background: #ffffff93; -webkit-box-shadow: 1px 1px 5px #ffdbe3; box-shadow: 1px 1px 5px #ffdbe3; }
+.left { width: 10%; background: #ffffff85; -webkit-box-shadow: 1px 1px 5px #e8e7ff; box-shadow: 1px 1px 5px #e8e7ff; }
 
 .right { width: 90%; }
 
-@media screen and (max-width: 600px) { .left, .right { width: 100%; } }
+.third { width: 33.3%; }
+
+.two-third { width: 66.6%; }
+
+.ml5 { margin-left: 5px; }
+
+.mt5 { margin-left: 5px; }
+
+.ml5 { margin-left: 5px; }
+
+@media screen and (max-width: 600px) { .left, .right, .third, .two-third { width: 100%; } }
 
 /*# sourceMappingURL=main.css.map */
